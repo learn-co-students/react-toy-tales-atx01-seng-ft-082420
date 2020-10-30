@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-
 import Header from './components/Header'
 import ToyForm from './components/ToyForm'
 import ToyContainer from './components/ToyContainer'
@@ -43,6 +42,7 @@ addToy = (toy) => {
     this.setState({
       toys: [...this.state.toys, newToy]
     })
+    this.handleClick()
   })
 }
 
@@ -58,7 +58,7 @@ deleteToy = (id) => {
 }
 
 addLike = (toy) => {
-  let likes = toy.likes + 1
+  ++toy.likes
   fetch(`http://localhost:3000/toys/${toy.id}`, {
     method: 'PATCH',
     headers: {
@@ -66,7 +66,7 @@ addLike = (toy) => {
       "Accept":"application/json"
     },
     body: JSON.stringify({
-      likes: likes
+      likes: toy.likes
     })
   })
   .then(res => res.json())

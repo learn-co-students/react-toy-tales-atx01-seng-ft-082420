@@ -13,7 +13,6 @@ class ToyCard extends Component {
       </div>
     );
   }
-
 }
 
 export default ToyCard;
