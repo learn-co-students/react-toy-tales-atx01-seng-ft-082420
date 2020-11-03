@@ -16,7 +16,7 @@
       "id": 4,
       "name": "Slinky Dog",
       "image": "https://www.freeiconspng.com/uploads/slinky-png-transparent-1.png",
-      "likes": 4
+      "likes": 5
     },
     {
       "id": 5,
@@ -35,18 +35,6 @@
       "name": "Little Green Men",
       "image": "http://www.pngmart.com/files/3/Toy-Story-Alien-PNG-File.png",
       "likes": 8
-    },
-    {
-      "name": "Pink Teddy Bear",
-      "image": "https://static.wikia.nocookie.net/pixar/images/5/52/Pink_TeddyBear.jpg/revision/latest/scale-to-width-down/199?cb=20200418210510",
-      "likes": 5,
-      "id": 9
-    },
-    {
-      "name": "Pink Teddy Bear",
-      "image": "https://static.wikia.nocookie.net/pixar/images/5/52/Pink_TeddyBear.jpg/revision/latest/scale-to-width-down/199?cb=20200418210510",
-      "likes": 0,
-      "id": 10
     }
   ]
 }
