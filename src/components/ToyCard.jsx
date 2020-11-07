@@ -2,15 +2,20 @@ import React, { Component } from 'react';
 
 class ToyCard extends Component {
 
+  // handleClick(toy) {
+  //   this.props.deleteToy(toy)
+  // }
+
   render() {
     return (
       <div className="card">
-        <h2>{'' /* Toy's Name */}</h2>
-        <img src={'' /* Toy's Image */} alt={'' /* Toy's Name */} className="toy-avatar" />
-        <p>{'' /* Toy's Likes */} Likes </p>
-        <button className="like-btn">Like {'<3'}</button>
-        <button className="del-btn">Donate to GoodWill</button>
+        <h2>{this.props.toy.name}</h2>
+        <img src={this.props.toy.image} alt={this.props.toy.name} className="toy-avatar" />
+        <p>{this.props.toy.likes} Likes </p>
+        <button className="like-btn" onClick={()=>this.props.frontEndLikePatch(this.props.toy)}>Like {'<3'}</button>
+        <button className="del-btn" onClick={()=>this.props.backEndDelete(this.props.toy.id)}>Donate to GoodWill</button>
       </div>
+      
     );
   }
 

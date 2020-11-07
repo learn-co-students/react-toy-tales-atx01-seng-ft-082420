@@ -7,3 +7,4 @@ const ToyHeader = () => (
 );
 
 export default ToyHeader;
+
